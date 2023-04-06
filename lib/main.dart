@@ -62,7 +62,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      body: Center(
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
         child: Column(
           children: <Widget>[
             Row(
@@ -202,6 +203,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ],
+            ),
+            Container(
+              margin: const EdgeInsets.fromLTRB(0, 500, 0, 0),
+              child: const Text('Hello World!'),
             ),
           ],
         ),
